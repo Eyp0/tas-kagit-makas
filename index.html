@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>TAŞ - KAĞIT - MAKAS</h1>
+        <section class="button" aria-label="Oyun Seçenekleri">
+            <button type="button" data-choice="tas">Taş</button>
+            <button type="button" data-choice="kagit">Kağıt</button>
+            <button type="button" data-choice="makas">Makas</button>
+        </section>
+        <section class="result" aria-live="polite">
+            <p><strong>Sizin Seçiminiz:</strong> <span id="user-choice">-</span></p>
+            <p><strong>Bilgisayarın Seçimi:</strong> <span id="computer-choice">-</span></p>
+            <h2 id="winner">Sonuç: -</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

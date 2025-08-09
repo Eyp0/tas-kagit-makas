@@ -1,0 +1,96 @@
+body {
+    background: #f4f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
+
+h1 {
+    color: #2d3a4b;
+    margin-bottom: 28px;
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+}
+
+.button {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.button button {
+    background: #e3eafc;
+    border: none;
+    border-radius: 50%;
+    width: 80px;        
+    height: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d3a4b;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.button button:hover {
+    background: #b6d0f7;
+    transform: scale(1.08);
+}
+
+.result {
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: 24px 20px;
+    min-width: 260px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.05);
+    margin-top: 8px;
+    text-align: center;
+}
+
+.result p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+#winner {
+    margin-top: 18px;
+    color: #1a73e8;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 18px 4px;
+        min-width: unset;
+        width: 98vw;
+    }
+    .button {
+        gap: 10px;
+    }
+    .button button {
+        width: 54px;
+        height: 54px;
+        font-size: 0.95rem;
+    }
+    .result {
+        padding: 12px 4px;
+        min-width: unset;
+    }
+}
